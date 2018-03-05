@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS DISPLAY</title>
+    <style>
+
+        ul li a{
+            background-color: seagreen;
+        }
+
+       ul li{
+        display: inline;/*for display in line*/
+
+       }
+
+        span{
+            background-color: yellow;
+            color: red;
+            display: block;
+        }
+
+        .div_block a{
+            text-decoration: none;
+            background-color: lightgreen;
+            color: white;
+            padding: 13px 14px;
+            display: inline-block;/*to display in line block*/
+        }
+        input{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- DISPLAY INLINE -->
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">CAREERS</a></li>
+    </ul>
+
+
+    <!-- Display Block -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <span >1. At aut beatae cum cumque dolore exercitationem facere in ipsum itaque, </span>
+        <span >2. iure libero maiores minus nisi odio sed temporibus totam veniam! Consequuntur!</span>
+        <span >3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        At aut beatae cum cumque dolore exercitationem facere in ipsum itaque,
+        iure libero maiores minus nisi odio sed temporibus totam veniam! Consequuntur!</p>
+
+    <!-- DISPLAY BLOCK -->
+    <div class="div_block">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Careers</a>
+    </div>
+
+    <!-- DISPLAY BLOCK -->
+    <div>
+        <form>
+            <input type="text" placeholder="User Name">
+            <input type="password" placeholder="Password">
+            <input type="submit">
+        </form>
+    </div>
+
+    <!-- DISPLAY NONE / HIDDEN -->
+    <h1 style="display: none">I am Hidden</h1>
+
+</body>
+</html>

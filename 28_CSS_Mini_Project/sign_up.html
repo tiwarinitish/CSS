@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UiBrains Techno portal</title>
+    <style>
+         body {
+            background-color: teal;
+            color: white;
+        }
+
+        table, td {
+            padding: 7px;
+            text-align: center;
+        }
+        body{
+            margin: 0;
+            font-family: 'Roboto',sans-serif;
+        }
+        .form{
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .main-header{
+            background-image: url("images/technology.JPG");
+            color: white;
+            background-size: cover;
+            padding: 30px;
+            font-size: 18px;
+            text-align: center;
+
+        }
+        .submit{
+            text-align: center;
+        }
+         input[type="submit"]{
+            background-color: blue;
+            color: white;
+            border:none;
+            padding: 14px 32px;
+            font-size: 14px;
+            margin: 15px;
+            border-radius: 7px;
+        }
+        input[type="submit"]:hover{
+            cursor: pointer;
+            background-color:lightpink;
+            box-shadow: 5px 5px 5px darkslategray;
+            color: black; 
+        }
+        input[type="text"]:focus,input[type="password"]:focus{
+            outline: none;
+            background-color: lightcyan;
+         }  
+        .font_section{
+            margin-left: 300px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 2px;
+            border-radius: 7px;
+            background-position: center;
+        }
+        .font_section input[type="text"],input[type="password"]{
+            height: 35px;
+            margin:15px;
+            text-align: center;
+            font-size: 20px;
+            
+            border-radius: 10px; 
+
+            }
+        .font_section input[type="text"]:focus,input[type="password"]:focus{
+            outline: none;
+            background-color: lightcyan;
+         }
+        
+    </style>
+</head>
+<body>
+   
+   <header class="main-header">
+        <h2>UIbrain techno portal</h2>
+    </header>
+
+<div class="form">
+    <form>
+        <table width="100%">
+            <tbody>
+            <tr>
+                <td>
+                    <label for="first-name"> First Name </label>
+                    <input type="text" id="firstname" size="30" placeholder="first-name">
+                </td>
+                <td>
+                    <label for="middle-name"> Middle Name </label>
+                    <input type="text" id="middlename" size="30" placeholder="middle-name">
+                </td>
+                <td>
+                    <label for="last-name"> Last Name </label>
+                    <input type="text" id="lastname" size="30" placeholder="last-name">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <p>Current Address</p>
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="10" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="number" placeholder="Mobile-number"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dateofbirth">Date Of Birth</label>
+                    <input type="date" id="dateofbirth">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <p>Gender :</p>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="female"> FeMale
+                </td>
+            </tr>
+            
+                <td>
+                    <label>Languages Known :</label>
+                    <input type="checkbox" value="telugu"> Telugu
+                    <input type="checkbox" value="hindi"> Hindi
+                    <input type="checkbox" value="english"> English
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="nationality">Nationality</label>
+                </td>
+                <td>
+                    <select id="nationality">
+                        <option value="indian">Indian</option>
+                        <option value="American">American</option>
+                        <option value="other">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="aadhar">Aadhar Number :</label>
+                </td>
+                <td>
+                    <input type="number" id="aadhar" placeholder="aadhar">
+                </td>
+                <td>
+                    <label for="pannumber">PAN Number :</label>
+                </td>
+                <td>
+                    <input type="text" id="pannumber" placeholder="pannumber">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <br><hr>
+</div>
+    <div class="font_section">
+    <input type="text" placeholder="sleact-username">
+    <br>
+    <input type="password" id="password" placeholder="enter password">
+    <br>
+    <input type="password" id="password" placeholder="re-enter password">
+    
+</div>
+<div class="submit">
+    <a href="sign_in.html"><input type="submit" value="submit"></a>
+</div>
+<br><hr>
+
+</body>
+</html>

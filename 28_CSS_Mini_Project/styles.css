@@ -1,0 +1,347 @@
+/*--main header--*/
+
+        body{
+        	margin: 0;
+        	font-family: 'Roboto',sans-serif;
+           
+        }
+    	.main-header{
+    		background-image: url("images/technology.JPG");
+    		color: white;
+    		background-size: cover;
+    		padding: 30px;
+    		font-size: 18px;
+    		text-align: center;
+
+    	}
+        .main-header a{
+            text-align: right;
+        }
+
+    	/*-----------main nav bar------*/
+    	.nav{
+    		background-color:black;
+
+    	}
+    	.nav ul{
+    		list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+            overflow: hidden;
+    	}
+    	.nav ul li{
+    		float: left;
+    	}
+    	.nav ul li a{
+    		text-decoration: none;
+    		color: white;
+    		padding: 14px 20px;
+    		display: inline-block;
+            font-size: 20px;
+    	}
+        .nav ul li b{
+            text-decoration: none;
+            color: white;
+            margin-right: 0;
+            padding: 14px 20px;
+            display: inline-block;
+            font-size: 20px;
+        }
+    	.nav ul li a:hover{
+    		background-color: #739AB4;
+    		border-radius: 7px;
+            color: white;
+    	}
+        .nav ul li a.active{
+            background-color: #A2E2E3;
+            border-radius: 8px;
+        }
+    	/*---------lattest news section-===*/
+    	.latest-news{
+    		background-color:#C1CACA;
+    		color: white;
+    		margin-top: 5px;
+    		animation-name: latest-news;
+    		animation-duration: 3s;
+    		animation-iteration-count: infinite;
+    		animation-timing-function: linear;
+    	}
+    	@keyframes latest-news{
+    		0% , 50% , 100%{
+    			background-color:#33BEFF;
+    		}
+    		25% , 75%{
+    			background-color:#FF8A33;
+    		}
+
+    	} 
+    	.latest-news p{
+    		font-size: 30px;
+    		margin-top: 10px;
+    		padding: 5px;
+    		animation-name: flash-news;
+    		animation-duration: 13s;
+    		animation-iteration-count: infinite;
+    		animation-timing-function: linear;
+    	}
+    	@keyframes flash-news{
+    		0%{
+    			transform: translateX(100%);
+    		}
+    		100%{
+    			transform: translateX(-100%);
+    		}
+    	}
+
+    	.home-news{
+            
+    		width: auto;
+    		height: auto;
+    		margin: auto;
+    	}
+    	.home-div{
+    		border:4px solid gray;
+    		width: 400px;
+    		height: 600px;
+    		text-align: center;
+    		float: left;
+    		margin: 5px;
+    		border-radius: 7px;
+    	}
+    	.home-div img{
+    		width: 320px;
+    		height: auto;
+    	}
+    	.home-div img:hover{
+    		padding: 10px;
+    		font-size: 18px;
+
+
+    	}
+    	.home-div .home-text{
+    		padding: 10px;
+    		font-size: 16px;
+    	}
+    	.home-div:hover{
+    		box-shadow: 5px 5px 5px seagreen;
+    		cursor: pointer;
+    		
+    	}
+    	
+    	.break{
+    		clear: both;
+    	}
+
+    	/*home artical section*/
+    	.home-artical-section{
+    		width: 1000px;
+    		height: auto;
+    		margin: auto;
+    	}
+    	.home-artical{
+    	height: 950px;
+    	margin-left: 45px;
+    	text-align: center;
+    	}
+    	h3{
+    		background-color:#978e86;
+    		padding: 15px;
+    		color: white;
+    		border-radius: 10px;
+            text-align: center;
+            width: 70%;
+            padding-left:90px;
+            margin-left: 160px; 
+
+    	}
+    	.home-image img{
+    		width: 650px;
+    		border-radius: 15px;
+    		border:2px solid gray;
+    		padding: 5px;
+            height: auto;
+            opacity: 0.8;
+            margin-left: 25%;
+
+
+    	}
+        .home-article p{
+            text-align: center;
+            font-size: 25px;
+            color: black;
+
+        }
+    	/*.home-image{
+    		width: 400px;
+
+    	}*/
+        .home-image img:hover{
+            width: 700px;
+            height: auto;
+            opacity: 1.0;
+            cursor: pointer;
+        }
+
+        /*---*/
+        .main-footer{
+            background-color:#002741;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+        small{
+            color: #F9845E;
+        }
+
+        /*--gallery section--*/
+        .gallery-section{
+            text-align:center;
+        }
+        .gallery-div{
+            border: 4px solid gray;
+            margin: 5px;
+            width: 300px;
+            
+            float: left;
+            padding: 5px;
+
+        }
+         .gallery-div:hover{
+            border: 4px solid lightpink;
+        }
+        .gallery-div img:hover{
+          
+            
+             cursor: pointer;
+     
+        }
+        .gallery-div img{
+       padding: 1px;
+            
+        width: 300px;
+        height: 200px;
+        }
+        .about-section{
+            width: 1100px;
+            height: auto;
+            margin: auto;
+        }
+        .about-div{
+            padding: 10px;
+
+        }
+        .about-div h4{
+            color: seagreen;
+            font-size: 30px;
+        }
+        .about-div p{
+            font-size: 15px;
+        }
+        /*--contact section--*/
+        .contact-section{
+            
+            width: 1100px;
+            height: auto;
+            margin: auto;
+            text-align: center;
+        }
+        .contact-section h3{
+            font-size: 50px;
+            margin-top: : 0;
+            background-color: white;
+            color: #4D7102;
+            text-align: center;
+           /* background-color: #5161B4;*/
+
+
+        }
+        input[type='text'] , input[type='email']{
+            height: 75px;
+            margin: 7px;
+            font-size: 20px;
+            text-align: center;
+            border:2px solid seagreen;
+            border-radius: 7px;
+        }
+        input[type='text']:focus , input[type='email']:focus{
+            outline: none;
+            background-color: lightgreen;
+        }
+        textarea{
+            margin: 7px;
+            font-size: 30px;
+            text-align: center;
+            border:2px solid seagreen;
+            border-radius: 7px;
+            width: 730px;
+
+        }
+        textarea:focus{
+            outline: none;
+            background-color: lightgreen;
+
+        }
+        input[type="submit"]{
+            background-color: darkcyan;
+            color: white;
+            border:none;
+            padding: 14px 32px;
+            font-size: 14px;
+            margin: 15px;
+            border-radius: 7px;
+        }
+        input[type="submit"]:hover{
+            cursor: pointer;
+            background-color:lightpink;
+            box-shadow: 5px 5px 5px darkslategray;
+            color: black; 
+        }
+
+        /*------sign in portal--*/
+
+         .font_section{
+            margin-left: 200px;
+            border:2px solid darkcyan;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 2px;
+            border-radius: 7px;
+            background-image: url("images/technology.JPG");
+            background-position: center;
+        }
+        .font_section h5{
+            color: white;
+            font-size: 30px;
+
+        }
+        .font_section input[type="text"],input[type="password"]{
+            height: 35px;
+            margin:15px;
+            text-align: center;
+            font-size: 20px;
+            border:2px solid darkcyan;
+            border-radius: 10px; 
+
+            }
+        .font_section input[type="text"]:focus,input[type="password"]:focus{
+            outline: none;
+            background-color: lightcyan;
+         }       
+        .font_section input[type="submit"]{
+            background-color: darkcyan;
+            color: white;
+            border:none;
+            padding: 14px 32px;
+            font-size: 14px;
+            margin: 15px;
+            border-radius: 7px;
+        }
+        .font_section input[type="submit"]:hover{
+            cursor: pointer;
+            background-color:lightpink;
+            box-shadow: 5px 5px 5px darkslategray;
+            color: black; 
+        }
+
+

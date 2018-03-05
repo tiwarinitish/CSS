@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS DropDown</title>
+    <style>
+         .dropdown{
+            position: relative;
+            width: 200px;
+         }
+        .dropdown_button{
+            background-color: darkcyan;
+            clear: white;
+            border:none;
+            padding: 25px 50px;
+            font-size: 25px;
+            margin-left: 100px;
+
+
+        }
+
+        .dropdown_list{
+            margin-left: 100px;
+            background-color: lightgray;
+            width: 193px;
+            text-align: center;
+            display: none;/*by hide by default*/
+
+
+
+        }
+        .dropdown_list a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 18px 20px;
+        }
+        .dropdown_list a:hover{
+            background-color: lightyellow;
+            color: black;
+
+        }
+        .dropdown:hover .dropdown_list{
+            cursor: pointer;
+            display: block;/*to display*/
+        }
+    </style>
+    
+
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown_button">Courses</button>
+        <div class="dropdown_list">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">Angular JS</a>
+        </div>
+    </div>
+</body>
+</html>

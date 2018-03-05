@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS LINKS</title>
+    <style>
+    	div{
+    		background-color: seagreen;
+    		text-align: center;
+            padding: 10px;
+            margin: 5px;    	
+    	}
+    	.bordered{
+    		text-decoration: none;
+    		color: red;
+    		border:2px solid orange;
+    		padding: 10px 20px;
+    		background-color: white; 
+    		border-radius: 10px;
+    	}
+    	.bordered:hover{
+    		background-color: red;
+    		color: white;
+    	}
+    	.button{
+    		background-color: forestgreen;
+    		color: white;
+    		text-decoration: none;
+    		padding: 14px 30px;
+    		border-radius: 10px;
+    	}
+    	.button:link{
+    		background-color: orange;
+    	}
+    	.button:hover{
+    		background-color: yellow;
+    	}
+    	button:active{
+    		background-color: orange;
+    	}
+    	.button:visited{
+    		background-color: black;
+    	}
+    	/*div a{
+    		color: white;
+    	}*/
+    </style>
+</head>
+<body>
+
+    <!-- NORMAL LINK -->
+    <div>
+    	<a href="#">Normar link</a>
+    </div>
+
+    <!-- NO UNDERLINE LINK -->
+    <div>
+    	<a href="#" style="text-decoration: none;">NO UNDERLINE LINK</a>
+    </div>
+
+    <!-- BORDERED LINK -->
+    <div>
+    	<a href="#" class="bordered">BORDERED</a>
+    </div>i
+
+    <!-- BUTTON LIKE LINK -->
+    <div>
+    	<a href="#" class="button">BUTTON</a>
+    </div>
+</body>
+</html>

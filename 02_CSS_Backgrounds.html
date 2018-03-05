@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+    	.backgroundImage{
+
+    		background-image: url("img/background.jpg");
+    		height: 200px;
+    		background-repeat: no-repeat;
+    	}
+    	.imagePosition{
+    		background-image: url("img/gallery2.jpeg");
+    		height: 150px;
+    		background-position: bottom left;
+    	}
+    	.imageRepeat{
+    		background-color: lightgreen;
+    		height: 300px;
+    		background-image: url("img/nature.jpg");
+    		background-repeat: repeat-y;
+
+    	}
+    	.shortcut{
+    		background: lightgreen url("img/gallery2.jpeg") no-repeat right top fixed;
+    	}
+
+    </style>
+
+</head>
+<body>
+
+<h2>!-- BACKGROUND COLOR --</h2>
+<p style="background-color: teal">I am TEAL background</p>
+
+<h2>--shotcut method--</h2>
+<div class="shortcut">
+	
+</div>
+
+<h2>!-- BACKGROUND IMAGE --</h2>
+<div class="backgroundImage">
+</div>
+<br>
+<h2>!-- BACKGROUND IMAGE POSITION --</h2>
+<div class="imagePosition">
+</div>
+<br>
+<h2>!-- BACKGROUND IMAGE REPEAT --</h2>
+<div class="imageRepeat">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Vertical Navigation</title>
+    <style>
+    aside{
+        font-family: "helvetica naue",sans-serif;
+        background-color: lightgreen;
+        float: left;
+        width: 200px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px seagreen;
+
+    }
+    aside ul{
+        list-style-type: none;/*to remove the dots*/
+        padding: 0px;
+        margin: 0px;
+
+    }
+    aside ul li a{
+        text-decoration: none;
+        color: black;
+        padding:  14px 20px;
+        display: block;/*to display in block*/
+
+
+    }
+    aside ul li a:hover{
+        background-color: lightpink;
+        color: black;
+        border-radius: 15px;
+        font-size: 20px;
+
+    }
+    aside ul li a.active{
+         background-color: lightpink;
+        color: black;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+
+
+<aside>
+    <ul>
+        <li>
+            <a href="#" class="active">HTML</a>
+        </li>
+        <li>
+            <a href="#">JavaScript</a>
+        </li>
+        <li>
+            <a href="#">CSS</a>
+        </li>
+        <li>
+            <a href="#">TypeScript</a>
+        </li>
+        <li>
+            <a href="#">Bootstrap</a>
+        </li>
+        <li>
+            <a href="#">Angular JS</a>
+        </li>
+    </ul>
+</aside>
+
+</body>
+</html>

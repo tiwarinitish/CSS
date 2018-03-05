@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions</title>
+    <style>
+        .static{
+            background-image: url("img/background.jpg");
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+            width: 200px;
+            color: teal;
+            text-align: center;
+            position: static; /*it will not effect furthor*/
+
+         }
+
+        .relative{
+             background-image: url("img/background.jpg");
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+            width: 200px;
+            color: teal;
+            text-align: center;
+            color: white;
+            position: relative; /*it is mandetory*/
+            left: 200px;
+
+
+        }
+
+        .relative_new{
+             background-image: url("img/background.jpg");
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+            width: 400px;
+            height: 200px;
+            color: white;
+            text-align: center;
+           left: 50px;
+            top: 50px;
+            margin-bottom: 10px;
+            position: relative;
+
+        }
+
+        .absolute{
+             background-image: url("img/background.jpg");
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+            width: 200px;
+            color: white;
+            text-align: center;
+
+            top: 50px;
+            left: 50px;
+            position: absolute;
+
+        }
+
+        .fixed{
+             background-image: url("img/background.jpg");
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+            width: 200px;
+            color: white;
+            text-align: center;
+            top: 0;
+            right: 0;
+            margin-bottom: 100px;
+            position: fixed;
+
+
+        }
+
+
+        .sticky{
+             background-image: url("img/background.jpg");
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+            color: white;
+
+            top: 0;
+            padding: 5px;
+            position: sticky;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="static">
+        <p>Static</p>
+    </div>
+
+    <div class="relative">
+        <p>Relative</p>
+    </div>
+
+
+    <div class="relative_new">
+        <p>Ancestor</p>
+       <div class="absolute">
+           <p>Absolute</p>
+       </div>
+    </div>
+
+    <br><br>
+
+    <div class="fixed">
+        <p>Fixed</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, ducimus, repellat. Aspernatur at quae sed veniam. Cumque distinctio dolores est exercitationem explicabo hic libero, neque, porro, quisquam recusandae reprehenderit sit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <div class="sticky">
+        <p>sticky</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti dicta distinctio eligendi esse fugiat harum, incidunt ipsa maxime molestias necessitatibus omnis quae quidem repellat sapiente totam voluptatem voluptates voluptatum?</p>
+
+
+
+
+</body>
+</html>

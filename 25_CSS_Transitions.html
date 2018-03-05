@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        .transition_width{
+            background-color: red;
+            width: 100px;
+            height: 100;
+            transition: width 2s;/*mendetary*/
+
+
+        }
+        .transition_width:hover{
+            width: 200px;
+        }
+        .transition_height{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            transition: height 2s;
+
+        }
+        .transition_height:hover{
+            height: 200px;
+        }
+        .transition_width_height{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition: width 2s,height 2s;
+
+        }
+        .transition_width_height:hover{
+            width: 200px;
+            height: 200px;
+        }
+        .transition_transform{
+
+
+        }
+        .transition_transform{
+            
+        }
+        .transition_linear{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+            transition-timing-function: linear;
+
+        }
+        .transition_linear:hover{
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="transition_width">
+       <h2> Width</h2>
+    </div>
+
+    <div class="transition_height">
+        <h2>Height</h2>
+    </div>
+
+    <div class="transition_width_height">
+        <h2>Both</h2>
+    </div>
+
+    <div class="transition_transform">
+        Rotate
+    </div>
+
+    <!-- transition-timing-function same start and end timings-->
+    <div class="transition_linear">
+        linear
+    </div>
+
+    <!-- Slow start time fast end time -->
+    <div class="speed_curve_ease_in">
+        ease_in
+    </div>
+
+    <!-- fast start time slow end time -->
+    <div class="speed_curve_ease_out">
+        ease_out
+    </div>
+
+    <!-- delay Transition -->
+    <div>
+        delay the transition
+    </div>
+
+</body>
+</html>
